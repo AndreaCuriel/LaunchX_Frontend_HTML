@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenes</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <header id="cabecera-usuario">
+        <div class="logo" id="logo_perfil"><img src="./logo_mini.jpg" alt="logo"></div>
+        <div id="cerrarS">
+            <a href="./login.html">Cerrar Sesión</a>
+        </div>
+    </header>
+
+
+    <article id="pedidos">
+
+        <section class="nombre-pagina">
+            <h1>Pedidos</h1>
+        </section>
+        
+        <seccion class="seccion-pedidos">
+            <div> 
+                <label for="buscador">Buscar por</label>
+                <select name="buscador" id="buscador">
+                    <option value="idB">ID</option>
+                    <option value="fechaEntregaB">Fecha de Entrega</option>
+                    <option value="clienteB">Cliente</option>
+                    <option value="estadoB">Estado</option>
+                </select>
+            
+            </div>
+            <br><br>
+            <div>
+                <label for="busquedaP-id">Id</label>
+                <input type="text" name="busquedaP-id" id="busquedaP-id">
+                <button class="buscarB">Buscar</button>
+                <label for="busquedaP-fecha">Cantidad</label>
+                <input type="number" name="busquedaP-fecha" id="busquedaP-fecha">
+                <button class="buscarB">Buscar</button>
+                <label for="busquedaP-nombre">Nombre</label>
+                <input type="text" name="busquedaP-nombre" id="busquedaP-nombre">
+                <button class="buscarB">Buscar</button>
+                <label for="busquedaP-estado">Nombre</label>
+                <input type="text" name="busquedaP-estado" id="busquedaP-estado">
+                <button class="buscarB">Buscar</button>
+            </div>
+                
+        </seccion>
+
+        <seccion class="seccion-pedidos" id="infobusqueda">
+            <table class="tablasIP" id="tabla-pedidos">
+                <tr>
+                    <th>ID</th>
+                    <th>Entrega</th>
+                    <th>Cliente</th>
+                    <th>Orden</th>
+                    <th>Descripción</th>
+                    <th>Estado</th>
+                </tr>
+                <tr>
+                    <td>0001</td>
+                    <td>
+                        <dt> Día
+                            <dd></dd>
+                        </dt>
+                        <dt> Hora
+                            <dd></dd>
+                        </dt>
+                    </td>
+                    <td><dl>
+                        <dt> Nombre
+                            <dd></dd>
+                        </dt>
+                        <dt> Emial
+                            <dd></dd>
+                        </dt>
+                        <dt> Telefono
+                            <dd></dd>
+                        </dt>
+                    </dl></td>
+                    <td>
+                        <dl>
+                            <dt> No. de Personas
+                                <dd></dd>
+                            </dt>
+                            <dt> Sabores
+                                <dd></dd>
+                            </dt>
+                            <dt>Adornos
+                                <dd></dd>
+                            </dt>
+                            <dt>Servicio para
+                            <dd></dd>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td></td>
+                    <td>
+                        <select id="estadoS" name="estadoS">
+                            <option value="nuevo">Nuevo</option>
+                            <option value="preparacion">Preparación</option>
+                            <option value="listo">Listo</option>
+                            <option value="Entregado">Entregado</option>
+                        </select>
+                    </td>
+                </tr>
+                
+            </table>
+        
+
+        </seccion>
+        
+    </article>
+
+    <section class="cambio-pagina" id="seccion-menu">
+        <nav id="nav-menu">
+
+            <div><a href="./perfil.html"><button class="botones-cambio" id="boton-Rperfil">Perfil</button></a></div>
+                
+        </nav>
+    </section>
+
+    <footer class="pie">
+
+        <dl class="datospie">
+        
+            <div><dt>Direccón:</dt>
+            <dd>Planeta: Marte</dd></div>
+            <div><dt>Teléfono:</dt>
+            <dd>(0985-12) 67548934</dd></div>
+            <div><dt>Horarios:</dt>
+            <dd>9:00am - 26pm</dd></div>
+           
+        
+         </dl>
+     </footer>
+    
+</body>
+</html>

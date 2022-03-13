@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <header id="cabecera-usuario">
+        <div class="logo" id="logo_perfil"><img src="./logo_mini.jpg" alt="logo"></div>
+        <div id="cerrarS">
+            <a href="./login.html">Cerrar Sesión</a>
+        </div>
+    </header>
+
+
+    <article>
+        
+        <section class="nombre-pagina">
+            <h1>Inventario</h1>
+        </section>
+    
+        <seccion class="inventario-B"> 
+            <div class="ingredientes-B">
+                <h2 class="titulos-inventario">ingredientes agotados</h2>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+            <div class="ingredientes-B">
+                <h2 class="titulos-inventario">Ingredientes por agotarse (5 unidades o menos)</h2>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+        </seccion>
+
+        <seccion class="inventario-B"> 
+            <div class="adornos-B">
+                <h2 class="titulos-inventario">Adornos agotados</h2>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+            <div class="adornos-B">
+                <h2 class="titulos-inventario">Adornos por agotarse (5 unidades o menos)</h2>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+        </seccion>
+
+        <seccion class="inventario-B"> 
+            <div class="materiales-B">
+                <h2 class="titulos-inventario">Materiales agotados</h2>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+            <div class="materiales-B">
+                <h2 class="titulos-inventario">Materiales por agotarse (5 unidades o menos)</h2>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+        </seccion>
+
+        <seccion class="inventario-B" id="inventario-B">
+            <div class="agregar-inventario-B">
+                <h2 class="titulos-inventario">Agregar</h2> <br>
+                <select name="agregar" id="agregar">
+                <option value="ingredientes">Ingredientes</option>
+                <option value="adornos ">Adornos</option>
+                <option value="materilaes">Materiales</option></select> <br><br>
+                <label for="inventario-nombre">Nombre</label>
+                <input type="text" name="inventario-nombre" id="inventario-nombre">
+                <label for="inventario-numero">Cantidad</label>
+                <input type="number" name="inventario-numero" id="inventario-numero">
+
+
+            </div>
+            
+        </seccion>
+
+        <div class="inventario-B">
+            <div class="agregar-inventario-B">
+                <h2 class="titulos-inventario">Buscar</h2> <br>
+                <select name="buscar" id="buscar">
+                    <option value="ingredientes">Ingredientes</option>
+                    <option value="adornos ">Adornos</option>
+                    <option value="materilaes">Materiales</option></select> <br><br>
+                    <label for="busqueda-id">Id</label>
+                    <input type="text" name="busqueda-id" id="busqueda-id">
+                    <button class="buscarB">Buscar</button>
+                    <label for="busqueda-nombre">Nombre</label>
+                    <input type="text" name="busqueda-nombre" id="busqueda-nombre">
+                    <button class="buscarB">Buscar</button>
+                    <label for="busqueda-numero">Cantidad</label>
+                    <input type="number" name="busqueda-numero" id="busqueda-numero">
+                    <button class="buscarB">Buscar</button>
+                    <br><br>
+
+                    <table class="tablasIP" id="tabla-inventario">
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Cantidad</th>
+                        </tr>
+                        <tr>
+                            <hd></hd>
+                            <hd></hd>
+                            <hd></hd>
+                        </tr>
+
+                    </table>
+            </div>
+            
+        </div>
+
+
+    </article>
+
+    <section class="cambio-pagina" id="seccion-menu">
+        <nav id="nav-menu">
+
+            <div><a href="./perfil.html"><button class="botones-cambio" id="boton-Rperfil">Perfil</button></a></div>
+                
+        </nav>
+    </section>
+
+    <footer class="pie">
+
+        <dl class="datospie">
+        
+            <div><dt>Direccón:</dt>
+            <dd>Planeta: Marte</dd></div>
+            <div><dt>Teléfono:</dt>
+            <dd>(0985-12) 67548934</dd></div>
+            <div><dt>Horarios:</dt>
+            <dd>9:00am - 26pm</dd></div>
+           
+        
+         </dl>
+     </footer>
+
+    
+</body>
+</html>
